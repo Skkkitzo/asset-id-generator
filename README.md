@@ -17,7 +17,7 @@ This program assumes that you create mods according to the standard procedure of
 1. Copy your mod directory to the Foundation mods directory
 2. Delete generated_ids.lua (make a backup just in case)
 3. Load Foundation + create a new save with your mod to generate the asset IDs
-4. Download [the exe file](https://github.com/Skkkitzo/asset-id-generator/raw/master/output/generateid.exe)
+4. Download [the latest release](https://github.com/Skkkitzo/asset-id-generator/releases)
 5. Your OS may give you a warning explaining how the file is unknown and may be a virus, I assure you it's not but my word isn't really worth anything. I advise you scan the file using your software of choice, and check the MD5 hash as well.
 6. Run the file and select the original generated_ids.lua file. This should be the one in your working directory, where you create your mod, _**NOT**_ the mods folder of Foundation that you created in step 3.
 7. Select the generated_ids.lua file that you want to _combine_ with the main file, this is the file that you created in step 3.
