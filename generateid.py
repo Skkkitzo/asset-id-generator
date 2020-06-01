@@ -98,24 +98,35 @@ def writeScript(primary: str, secondary: str):
         f.write(data)
 
 def fileDialog() -> str:
+    """Prompt user with a file dialog and return filepath"""
     filepath = askopenfilename()
 
     if filepath != None:
         return filepath
 
-def getShortFilepath(filepath) -> str:
+def getShortFilepath(filepath: str) -> str:
+    """Convert filepath to a shortened version
+    
+    Parameters:
+        filepath : string of the filepath
+    """
     drive = filepath.split('/')[0]
     filename = filepath.split('/')[-1]
 
     return '%s/.../%s' % (drive, filename)
 
 def writeToLog(text):
-    """Write a string to log"""
+    """Write a string to log
+    
+    Parameters:
+        text : string of the information that you want to log
+    """
     log.configure(state='normal')
     log.insert('end', text + "\n")
     log.configure(state='disabled')
 
 def getMillis() -> int:
+    """Get the current time in milliseconds"""
     return int(round(time.time() * 1000))
 
 def setMainFile():
